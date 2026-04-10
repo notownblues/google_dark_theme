@@ -1,10 +1,22 @@
-# NEW VERSION OF THIS THEME IS AVAILABLE. IT SUPPORTS BOTH LIGHT AND DARK MODE. YOU CAN CHECK THE THEME [HERE](https://github.com/JuanMTech/google-theme).
-<br />
-<br />
-
 # Google Dark Theme
 
 A Home Assistant theme inspired on Google app dark mode.
+
+> **Fork notice:** this is a maintained fork of [JuanMTech/google_dark_theme](https://github.com/JuanMTech/google_dark_theme), which has been inactive since 2023.
+<br />
+<br />
+
+### Home Assistant 2026.4+ compatibility
+
+The Home Assistant 2026.4 frontend migrated `ha-textfield` to `ha-input` and dropped the old `mdc-text-field-fill-color` / `mdc-select-fill-color` / `input-fill-color` theme variables. That caused dropdowns and text fields (Language, Theme, Dashboard, etc.) to render with a bright white background on this dark theme.
+
+This fork adds the new semantic form variables introduced in 2026.4 so text fields render correctly again:
+
+- `ha-color-form-background`
+- `ha-color-form-background-hover`
+- `ha-color-form-background-disabled`
+
+See the [frontend 2026.4 component update](https://developers.home-assistant.io/blog/2026/03/25/frontend-component-updates-2026.4/) for background.
 <br />
 <br />
 
@@ -36,11 +48,16 @@ frontend:
 3. **Restart** Home assistant to apply the changes. 
 
 ### HACS installation
-1. Go into the Community Store (HACS)
-2. Search for Google Dark Theme
-3. Open the theme
-4. Press Install
-5. Restart Home Assistant
+
+This fork is not in the HACS default index, so it has to be added as a custom repository:
+
+1. Open **HACS** in Home Assistant.
+2. Click the three-dot menu (top right) → **Custom repositories**.
+3. Repository: `https://github.com/notownblues/google_dark_theme`
+4. Type: **Theme**, then click **Add**.
+5. Search for **Google Dark Theme** in HACS and open it.
+6. Press **Download**.
+7. Restart Home Assistant.
 
 ### Manual installation
 1. In the Home assistant **themes** folder, create a file named `google_dark_theme.yaml`

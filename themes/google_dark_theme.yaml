@@ -88,6 +88,10 @@ Google Dark Theme:
   mdc-select-dropdown-icon-color: var(--secondary-text-color)
   mdc-select-hover-line-color: var(--accent-color)
   mdc-text-field-fill-color: var(--mdc-select-fill-color)
+  # HA 2026.4+ form field backgrounds (ha-input, ha-select, ha-textfield)
+  ha-color-form-background: rgb(42, 43, 46)
+  ha-color-form-background-hover: rgb(55, 56, 59)
+  ha-color-form-background-disabled: rgb(32, 33, 36)
   # Input
   input-fill-color: var(--secondary-background-color)
   input-dropdown-icon-color: var(--secondary-text-color)
