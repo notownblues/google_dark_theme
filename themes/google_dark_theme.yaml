@@ -28,6 +28,9 @@ Google Dark Theme:
   sidebar-background-color: rgb(32, 33, 36)
   sidebar-selected-icon-color: rgb(138, 180, 248)
   sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Tooltips (sidebar hover pills, etc.)
+  ha-tooltip-background-color: rgb(55, 56, 59)
+  ha-tooltip-color: rgb(242, 242, 242)
   # Buttons
   paper-item-icon-color: rgb(169, 177, 188)
   paper-item-icon-active-color: rgb(138, 180, 248)
