@@ -114,6 +114,10 @@ Google Dark Theme:
       ha-color-fill-neutral-quiet-resting: rgb(42, 43, 46)
       ha-color-fill-neutral-quiet-hover: rgb(55, 56, 59)
       ha-color-fill-neutral-quiet-active: rgb(42, 43, 46)
+      # Error / warning row backgrounds ("Needs attention", failed entries): keep the
+      # card surface like Google does and let the red/amber status text carry the state
+      ha-color-fill-danger-quiet-resting: var(--card-background-color)
+      ha-color-fill-warning-quiet-resting: var(--card-background-color)
       # HA 2026.4+ semantic text tokens (used by ha-input label, hints, etc.)
       ha-color-text-primary: var(--primary-text-color)
       ha-color-text-secondary: var(--secondary-text-color)
